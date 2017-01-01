@@ -9,6 +9,7 @@ xcodeproj 'MasonryTest.xcodeproj'
 target 'MasonryTest' do
 	pod 'Masonry', '~> 1.0.0'
 	pod 'AFNetworking', '~> 3.1.0'
+	pod 'UITableView+FDTemplateLayoutCell'
 end
 
 =begin

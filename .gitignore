@@ -1,6 +1,8 @@
 # Xcode
 # https://github.com/github/gitignore/blob/master/Objective-C.gitignore
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+podfile.lock
+contents.xcworkspacedata
 
 ## Build generated
 build/
