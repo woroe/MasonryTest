@@ -10,8 +10,9 @@
 @end
 @implementation tableTest
 - (void)viewDidLoad {
-    [super viewDidLoad];self.view.backgroundColor=[UIColor greenColor];
-    //UITableView *tableTest=[UITableView];
+    [super viewDidLoad];self.view.backgroundColor=[UIColor whiteColor];
+    self.title=@"我的书库";
+
 }
 
 - (void)didReceiveMemoryWarning{[super didReceiveMemoryWarning];}

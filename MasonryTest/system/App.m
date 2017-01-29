@@ -15,11 +15,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     myWindow= [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    [application setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
     
     tableTest *tt = [[tableTest alloc]init];
     UINavigationController *ttNav = [[UINavigationController alloc]initWithRootViewController:tt];
-    ttNav.navigationBarHidden=YES;
     myWindow.rootViewController=ttNav;
     [myWindow makeKeyAndVisible];
     return YES;

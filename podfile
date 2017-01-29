@@ -1,5 +1,8 @@
 #安装使用第三方库的管理工具CocoaPods http://blog.csdn.net/u011740841/article/details/51958790
 #Masonry与UITableView+FDTemplateLayoutCell搭配使用 http://www.cnblogs.com/geshihuayoutiao/p/4671246.html
+#远程便捷HTTP传输请求数据时最大的缓存字节数，默认时1M字节,设置为500M
+#$ sudo git config --global http.postBuffer 524288000
+#$ pod setup
 #CocoaPods 死慢 source 'https://github.com/CocoaPods/Specs.git' 
 #用国内源 http://git.oschina.net/akuandev/Specs.git
 #$ pod repo remove master
@@ -7,16 +10,30 @@
 #$ pod repo update
 #命令执行的时候会比较耗时 $ cd ~/.cocoapods
 #每隔一会 查看文件大小   $ du -sh *
+source 'https://github.com/CocoaPods/Specs.git'
 source 'https://git.coding.net/hging/Specs.git' 
 
 platform :ios, '7.0'
-inhibit_all_warnings!
-xcodeproj 'MasonryTest.xcodeproj'
+#inhibit_all_warnings!
+xcodeproj 'MasonryTest'
 
 target 'MasonryTest' do
 	pod 'Masonry', '~> 1.0.0'
-	pod 'AFNetworking', '~> 3.1.0'
 	pod 'UITableView+FDTemplateLayoutCell'
+	
+	pod 'AFNetworking', '~> 3.1.0'
+	pod 'baiduMap', '~> 2.8.1'
+	pod 'FMDB', '~> 2.6.2'
+	pod 'GTMBase64', '~> 1.0.0'
+	pod 'QREncoderARC', '~> 1.0.0'
+	pod 'MobShareSDK', '~> 2.12.1'
+	pod 'MJRefresh', '~> 3.1.12'
+	pod 'JSONKit'
+	pod 'MBProgressHUD'
+	pod 'CLImageEditor', '~> 0.1.8'  #超强的图片编辑库
+	pod 'MWPhotoBrowser', '~> 2.1.2' #照片浏览器 解决SDWebImage加载大图导致的内存警告问题。
+	pod 'EZAudio', '~> 1.1.5'        #根据音量实时显示波形图
+	pod 'SCRecorder', '~> 2.7.0'     #短视频录制
 end
 
 =begin
