@@ -30,10 +30,10 @@ target 'MasonryTest' do
 	pod 'MJRefresh', '~> 3.1.12'
 	pod 'JSONKit'
 	pod 'MBProgressHUD'
-	pod 'CLImageEditor', '~> 0.1.8'  #超强的图片编辑库
-	pod 'MWPhotoBrowser', '~> 2.1.2' #照片浏览器 解决SDWebImage加载大图导致的内存警告问题。
-	pod 'EZAudio', '~> 1.1.5'        #根据音量实时显示波形图
-	pod 'SCRecorder', '~> 2.7.0'     #短视频录制
+	pod 'CLImageEditor'  #超强的图片编辑库
+	pod 'MWPhotoBrowser' #照片浏览器 解决SDWebImage加载大图导致的内存警告问题。
+	#pod 'EZAudio'       #根据音量实时显示波形图
+	#pod 'SCRecorder'    #短视频录制
 end
 
 =begin
